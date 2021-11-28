@@ -1,13 +1,21 @@
 <div class="flex-box">
   <div style="width: 45%;">
-    <apx-chart [series]="chartOptions.series" [chart]="chartOptions.chart" [xaxis]="chartOptions.xaxis"
-      [title]="chartOptions.title"></apx-chart>
-    <button (click)="updateChart()">Update</button>
+    <apx-chart 
+      [series]="chartOptions.series" 
+      [chart]="chartOptions.chart" 
+      [xaxis]="chartOptions.xaxis"
+      [title]="chartOptions.title"
+    ></apx-chart>
   </div>
   <div id="chart2" style="float: left; width: 45%;">
-    <apx-chart [series]="chartOptions2.series" [chart]="chartOptions2.chart" [xaxis]="chartOptions2.xaxis"
-      [stroke]="chartOptions2.stroke" [tooltip]="chartOptions2.tooltip" [dataLabels]="chartOptions2.dataLabels">
-    </apx-chart>
+    <apx-chart 
+      [series]="chartOptions2.series" 
+      [chart]="chartOptions2.chart" 
+      [xaxis]="chartOptions2.xaxis"
+      [stroke]="chartOptions2.stroke" 
+      [tooltip]="chartOptions2.tooltip" 
+      [dataLabels]="chartOptions2.dataLabels"
+    ></apx-chart>
   </div>
 </div>
 <div class="flex-box">
