@@ -1,40 +1,17 @@
 <div class="flex-box">
   <div style="width: 45%;">
-    <apx-chart 
-      [series]="chartOptions.series" 
-      [chart]="chartOptions.chart" 
-      [xaxis]="chartOptions.xaxis"
-      [title]="chartOptions.title"
-    ></apx-chart>
+    <app-grafico-barras></app-grafico-barras>
   </div>
   <div id="chart2" style="float: left; width: 45%;">
-    <apx-chart 
-      [series]="chartOptions2.series" 
-      [chart]="chartOptions2.chart" 
-      [xaxis]="chartOptions2.xaxis"
-      [stroke]="chartOptions2.stroke" 
-      [tooltip]="chartOptions2.tooltip" 
-      [dataLabels]="chartOptions2.dataLabels"
-    ></apx-chart>
+    <app-grafico-area></app-grafico-area>
   </div>
 </div>
 <div class="flex-box">
-  <div id="chart3" style="width: 45%;">
-    <apx-chart
-      [series]="chartOptions3.series"
-      [chart]="chartOptions3.chart"
-      [labels]="chartOptions3.labels"
-      [responsive]="chartOptions3.responsive"
-    ></apx-chart>
+  <div id="chart3" style="width: 35%; ">
+    <app-grafico-pizza></app-grafico-pizza>
   </div>
   <div id="chart4">
-    <apx-chart
-      [series]="chartOptions4.series"
-      [chart]="chartOptions4.chart"
-      [xaxis]="chartOptions4.xaxis"
-      [yaxis]="chartOptions4.yaxis"
-      [title]="chartOptions4.title"
-    ></apx-chart>
+    <app-grafico-candle></app-grafico-candle>
   </div>
 </div>
 
