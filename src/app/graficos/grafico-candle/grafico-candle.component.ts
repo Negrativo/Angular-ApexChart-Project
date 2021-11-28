@@ -13,7 +13,7 @@ import {
   ApexStroke,
 } from 'ng-apexcharts';
 
-export type ChartOptions4 = {
+export type ChartOptions = {
   series: ApexAxisChartSeries;
   chart: ApexChart;
   xaxis: ApexXAxis;
@@ -30,10 +30,10 @@ export class GraficoCandleComponent implements OnInit {
 
   @ViewChild("chart4")
   chart4: ChartComponent = new ChartComponent;
-  public chartOptions4: ChartOptions4;
+  public chartOptions: ChartOptions;
 
   constructor() {
-    this.chartOptions4 = {
+    this.chartOptions = {
       series: [
         {
           name: "candle",

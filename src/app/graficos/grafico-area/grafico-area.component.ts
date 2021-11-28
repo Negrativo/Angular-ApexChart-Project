@@ -9,7 +9,7 @@ import {
   ApexStroke,
 } from 'ng-apexcharts';
 
-export type ChartOptions2 = {
+export type ChartOptions = {
   series: ApexAxisChartSeries;
   chart: ApexChart;
   xaxis: ApexXAxis;
@@ -27,10 +27,10 @@ export type ChartOptions2 = {
 export class GraficoAreaComponent implements OnInit {
   @ViewChild("chart2")
   chart2: ChartComponent = new ChartComponent;
-  public chartOptions2: ChartOptions2;
+  public chartOptions: ChartOptions;
 
   constructor() {
-    this.chartOptions2 = {
+    this.chartOptions = {
       series: [
         {
           name: "series1",

@@ -6,7 +6,7 @@ import {
   ApexChart,
 } from 'ng-apexcharts';
 
-export type ChartOptions3 = {
+export type ChartOptions = {
   series: ApexNonAxisChartSeries;
   chart: ApexChart;
   responsive: ApexResponsive[];
@@ -21,10 +21,10 @@ export type ChartOptions3 = {
 export class GraficoPizzaComponent implements OnInit {
   @ViewChild("chart3")
   chart3: ChartComponent = new ChartComponent;
-  public chartOptions3: ChartOptions3;
+  public chartOptions: ChartOptions;
 
   constructor() {
-    this.chartOptions3 = {
+    this.chartOptions = {
       series: [44, 55, 13, 43, 22],
       chart: {
         width: 380,
