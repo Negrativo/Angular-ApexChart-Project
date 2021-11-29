@@ -42,14 +42,14 @@ export class GraficoBarrasComponent implements OnInit {
       xaxis: {
         categories: [
           'Jan',
-          'Feb',
+          'Fev',
           'Mar',
-          'Apr',
-          'May',
+          'Abr',
+          'Mai',
           'Jun',
           'Jul',
-          'Aug',
-          'Sep',
+          'Ago',
+          'Set',
         ],
       },
     };
