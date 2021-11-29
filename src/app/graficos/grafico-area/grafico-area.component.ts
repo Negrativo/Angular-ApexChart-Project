@@ -25,8 +25,8 @@ export type ChartOptions = {
   styleUrls: ['./grafico-area.component.scss']
 })
 export class GraficoAreaComponent implements OnInit {
-  @ViewChild("chart2")
-  chart2: ChartComponent = new ChartComponent;
+  @ViewChild("chart")
+  chart: ChartComponent = new ChartComponent;
   public chartOptions: ChartOptions;
 
   constructor() {

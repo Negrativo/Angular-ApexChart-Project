@@ -28,7 +28,7 @@ export class GraficoBarrasComponent implements OnInit {
     this.chartOptions = {
       series: [
         {
-          name: 'My-series',
+          name: 'Dados',
           data: [10, 41, 35, 51, 49, 62, 69, 91, 148],
         },
       ],
@@ -37,7 +37,7 @@ export class GraficoBarrasComponent implements OnInit {
         type: 'bar',
       },
       title: {
-        text: 'Angular Chart',
+        text: 'Gráfico Barras',
       },
       xaxis: {
         categories: [

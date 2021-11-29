@@ -2,15 +2,10 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 import {
   ChartComponent,
   ApexAxisChartSeries,
-  ApexNonAxisChartSeries,
-  ApexResponsive,
   ApexChart,
   ApexXAxis,
   ApexYAxis,
   ApexTitleSubtitle,
-  ApexDataLabels,
-  ApexTooltip,
-  ApexStroke,
 } from 'ng-apexcharts';
 
 export type ChartOptions = {
@@ -28,8 +23,8 @@ export type ChartOptions = {
 })
 export class GraficoCandleComponent implements OnInit {
 
-  @ViewChild("chart4")
-  chart4: ChartComponent = new ChartComponent;
+  @ViewChild("grafico")
+  chart: ChartComponent = new ChartComponent;
   public chartOptions: ChartOptions;
 
   constructor() {
@@ -287,7 +282,7 @@ export class GraficoCandleComponent implements OnInit {
         width: 750
       },
       title: {
-        text: "CandleStick Chart",
+        text: "Gráfico CandleStick",
         align: "left"
       },
       xaxis: {

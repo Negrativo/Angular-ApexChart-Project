@@ -19,8 +19,8 @@ export type ChartOptions = {
   styleUrls: ['./grafico-pizza.component.scss']
 })
 export class GraficoPizzaComponent implements OnInit {
-  @ViewChild("chart3")
-  chart3: ChartComponent = new ChartComponent;
+  @ViewChild("chart")
+  chart: ChartComponent = new ChartComponent;
   public chartOptions: ChartOptions;
 
   constructor() {
@@ -30,7 +30,7 @@ export class GraficoPizzaComponent implements OnInit {
         width: 380,
         type: "pie"
       },
-      labels: ["Team A", "Team B", "Team C", "Team D", "Team E"],
+      labels: ["Marcos", "Camila", "Rafael", "Gustavo", "Felipe"],
       responsive: [
         {
           breakpoint: 480,
